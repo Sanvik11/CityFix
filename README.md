@@ -1,53 +1,20 @@
-# CityFix 🏙️
-### AI-Powered Civic Issue Reporting Platform
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-CityFix bridges the gap between citizens and public works. 
-Snap a photo of a pothole, water leak, or broken light — 
-our AI classifies, prioritizes, and routes it instantly.
+# Run and deploy your AI Studio app
 
-## Live Demo
-🔗 https://cityfix-107476098950.us-west1.run.app
+This contains everything you need to run your app locally.
 
-## Problem Statement
-Community Hero — Hyperlocal Problem Solver (Vibe2Ship Hackathon)
+View your app in AI Studio: https://ai.studio/apps/7d95ea89-15e3-4858-b08f-afb2cf3f8457
 
-## Key Features
-- 📸 Photo-based issue reporting with auto-detected geolocation
-- 🤖 Gemini AI analyzes photos for category, severity, and department routing
-- 🔁 Autonomous triage agent: detects duplicate reports within 100m, 
-  merges them, and auto-escalates priority (Low → Medium → High → Critical)
-- 📊 Live dashboard: urgency triage density, category distribution, 
-  active repairs, resolved counts
-- 🗺️ Community feed with real-time status tracking
-- 🔐 Google Sign-In authentication
+## Run Locally
 
-## How the Triage Agent Works
-1. User submits a report with photo + auto-detected location
-2. Gemini analyzes the photo → category + severity
-3. Agent checks Firestore for existing reports within ~100m, same category
-4. If duplicate found → merges report, increments confirmation count, 
-   recalculates priority automatically
-5. Priority badge updates visibly on the community feed card
+**Prerequisites:**  Node.js
 
-## Tech Stack
-| Layer | Technology |
-|---|---|
-| Frontend | React.js |
-| Database | Cloud Firestore |
-| Auth | Firebase Authentication |
-| AI | Gemini API |
-| Deployment | Google Cloud Run |
-| Built with | Google AI Studio |
 
-## Google Technologies Used
-- Google AI Studio
-- Gemini API
-- Cloud Firestore
-- Firebase Authentication
-- Google Cloud Run
-- Google Cloud Console
-
-## Setup
-This app was built and deployed entirely via Google AI Studio. 
-To run locally, clone the repo and add your Firebase and Gemini API keys 
-to the environment variables.
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
