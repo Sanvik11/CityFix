@@ -1,15 +1,12 @@
-# CityFix 🏙️
+# AI Civic Issue Reporting Platform 🏙️
 ### AI-Powered Civic Issue Reporting Platform
 
-CityFix bridges the gap between citizens and public works. 
+This platform bridges the gap between citizens and public works. 
 Snap a photo of a pothole, water leak, or broken light — 
 our AI classifies, prioritizes, and routes it instantly.
 
 ## Live Demo
 🔗 https://cityfix-107476098950.us-west1.run.app
-
-## Problem Statement
-Community Hero — Hyperlocal Problem Solver (Vibe2Ship Hackathon)
 
 ## Key Features
 - 📸 Photo-based issue reporting with auto-detected geolocation
@@ -47,7 +44,4 @@ Community Hero — Hyperlocal Problem Solver (Vibe2Ship Hackathon)
 - Google Cloud Run
 - Google Cloud Console
 
-## Setup
-This app was built and deployed entirely via Google AI Studio. 
-To run locally, clone the repo and add your Firebase and Gemini API keys 
-to the environment variables.
+
